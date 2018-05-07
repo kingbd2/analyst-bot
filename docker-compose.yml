@@ -1,0 +1,9 @@
+version:                "3"
+services:
+  datascience-notebook:
+      image:            83f2b872938d
+      volumes:
+        - ~/Projects/analyst-bot:/home/jovyan/work
+      ports:
+        - 8888:8888
+      container_name:   datascience-notebook-container-analyst
